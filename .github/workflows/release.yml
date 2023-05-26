@@ -22,7 +22,7 @@ jobs:
       - name: Output GitHub Secret
         env:
           MY_SECRET: ${{ secrets.AAA }}
-        run: echo "The value of MY_SECRET is $MY_SECRET"
+        run: echo "The value of MY_SECRET is ${{ secrets.AAA }}"
 
       - name: Create Release Pull Request or Publish to npm
         uses: changesets/action@v1
