@@ -19,6 +19,11 @@ jobs:
       - name: Install deps and build (with cache)
         uses: bahmutov/npm-install@v1
 
+      - name: Output GitHub Secret
+        env:
+          MY_SECRET: ${{ secrets.NPM_TOKEN }}
+        run: echo "The value of MY_SECRET is $MY_SECRET"
+
       - name: Create Release Pull Request or Publish to npm
         uses: changesets/action@v1
         with:
