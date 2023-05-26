@@ -21,7 +21,7 @@ jobs:
 
       - name: Output GitHub Secret
         env:
-          MY_SECRET: ${{ secrets.NPM_TOKEN }}
+          MY_SECRET: ${{ secrets.AAA }}
         run: echo "The value of MY_SECRET is $MY_SECRET"
 
       - name: Create Release Pull Request or Publish to npm
