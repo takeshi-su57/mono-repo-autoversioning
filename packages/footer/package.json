@@ -1,6 +1,6 @@
 {
   "name": "@takeshi-su57/footer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && rollup --config",
